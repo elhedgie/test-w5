@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/font.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="src/js/main.js"></script>
+    <title>Work5</title>
+  </head>
+  <body>
+    <main>
+      <div class="row myrow">
+        <nav class="navbar col-xl-2 col-lg-3 col-md-4 col-sm-12">
+          <a href="#" class="header__logo img-fluid">
+            <img
+              class="header__logo-img"
+              src="src/img/logo@2x.png"
+              alt="logo"
+            />
+          </a>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link"><svg class="navbar-icon home-page">
+                  <use xlink:href="sprite.svg#home-page"></use></svg> Главная</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link"
+                ><svg class="navbar-icon">
+                  <use xlink:href="sprite.svg#shopping-cart"></use></svg>Мои магазины</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link"
+                ><svg class="navbar-icon">
+                  <use xlink:href="sprite.svg#megaphone"></use></svg>Промоматериалы</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link"
+                ><svg class="navbar-icon">
+                  <use xlink:href="sprite.svg#pie-chart"></use></svg>Статистика</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link"
+                ><svg class="navbar-icon">
+                  <use xlink:href="sprite.svg#wallet"></use></svg>Баланс</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link"
+                ><svg class="navbar-icon">
+                  <use xlink:href="sprite.svg#profile"></use></svg>Персональные данные</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link"
+                ><svg class="navbar-icon">
+                  <use xlink:href="sprite.svg#information"></use></svg>FAQ</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link"
+                ><svg class="navbar-icon">
+                  <use xlink:href="sprite.svg#support"></use></svg>Техподдержка</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link"
+                ><svg class="navbar-icon">
+                  <use xlink:href="sprite.svg#logout"></use></svg>Выход</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          style="background-color: #f8faff"
+          class="content col-xl-10 col-lg-9 col-md-8 col-sm-12"
+        >
+          <div class="row myrow">
+            <div class="mycol col-lg-12 content__top">
+              <button type="button" class="burger">
+                <span class="burger__middle"></span>
+              </button>
+              <div
+                style="--bs-breadcrumb-divider: ''"
+                class="content__breadcrumb breadcrumb"
+              >
+                <li class="breadcrumb-item">
+                  <a href="#" class="breadcrumb__link">Главная</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="breadcrumb__link">Мои магазины</a>
+                </li>
+              </div>
+              <div class="content__profile-block profile-block">
+                <div class="profile-block__messages border">
+                  <a href="#" class="profile-block__message-link"
+                    ><svg class="profile-icon">
+                      <use xlink:href="sprite.svg#envelope"></use></svg></a>
+                </div>
+                <div class="profile-block__profile">
+                  <img
+                    class="profile-block__profile-img rounded-circle"
+                    src="src/img/jpeg/dr-house-close-up.jpeg"
+                    alt="profile image"
+                  />
+                  <a href="#" class="profile-block__profile-name"
+                    >Владимир Добжанский</a
+                  >
+                </div>
+              </div>
+            </div>
+            <section class="content__main-block main-block mycol col-lg-11">
+              <div class="add-shop-block">
+                <button type="button" class="add-shop-btn bttn green-btn">
+                  <svg class="add-shop-svg icon">
+                    <use xlink:href="sprite.svg#cancel"></use></svg>Создать свой магазин
+                </button>
+                <div class="popup">
+                  <h2 class="h2 popup__heading">Создать магазин</h2>
+                  <button class="popup__close">
+                    <svg class="popup__close-svg icon">
+                      <use xlink:href="sprite.svg#cancel"></use>
+                    </svg>
+                  </button>
+                  <div class="dropdown-group">
+                    <div
+                      id="dropdown-temple"
+                      data-bs-toggle="dropdown"
+                      class="dropdown"
+                    >
+                      <span class="dropdown-label">Шаблон</span>
+                      <a
+                        class="btn dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Стандартный
+                      </a>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                    <div
+                      id="dropdown-scheme"
+                      data-bs-toggle="dropdown"
+                      class="dropdown"
+                    >
+                      <span class="dropdown-label">Цветовая схема</span>
+                      <a
+                        class="btn dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Классическая
+                      </a>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="dropdown-label">Домен</span>
+                    <input
+                      type="text"
+                      class="domain-input form-control"
+                      placeholder="Например: ivangrozniy"
+                      aria-label="Domain name"
+                      aria-describedby="basic-addon2"
+                    />
+                    <span class="input-group-text" id="basic-addon2"
+                      >.work5.ru</span
+                    >
+                  </div>
+                  <div class="popup__info-block">
+                    <svg class="popup__info-svg icon">
+                      <use xlink:href="sprite.svg#warning"></use>
+                    </svg>
+                    <p class="popup__info">
+                      В названии домена разрешены латиница и “-”, запрещается
+                      использовать словосочетание Work 5. После создания
+                      магазина Вы сможете прикрутить свой домен (например
+                      ivangrozniy.ru). Подробнее по
+                      <a class="popup__info-link" href="#">ссылке</a>
+                    </p>
+                  </div>
+                  <div class="btn-block">
+                    <button class="popup__btn bttn grey-btn">Отменить</button>
+                    <button class="popup__btn bttn green-btn">Создать</button>
+                  </div>
+                </div>
+              </div>
+              <h2 class="h2 main-block__heading">Управление магазинами</h2>
+              <div class="main-block__shop-block">
+                <div class="table-responsive">
+                  <table class="table main-block__table">
+                    <thead class="thead">
+                      <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Название</th>
+                        <th scope="col">Адрес</th>
+                        <th scope="col">Действие</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody">
+                      <tr class="shop-item">
+                        <th scope="row">12345</th>
+                        <td>Дипломная работа</td>
+                        <td>http://www.work5.ru/services</td>
+                        <td>
+                          <div class="btn-block">
+                            <button class="green-btn edit-btn bttn">
+                              <svg class="edit-svg icon">
+                                <use xlink:href="sprite.svg#pencil"></use></svg>Редактировать
+                            </button>
+                            <button class="grey-btn edit-btn bttn">
+                              <svg class="edit-svg icon">
+                                <use xlink:href="sprite.svg#cancel"></use></svg>Редактировать
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shop-item">
+                        <th scope="row">12345</th>
+                        <td>Дипломная работа</td>
+                        <td>http://www.work5.ru/services</td>
+                        <td>
+                          <div class="btn-block">
+                            <button class="green-btn edit-btn bttn">
+                              <svg class="edit-svg icon">
+                                <use xlink:href="sprite.svg#pencil"></use></svg>Редактировать
+                            </button>
+                            <button class="grey-btn edit-btn bttn">
+                              <svg class="edit-svg icon">
+                                <use xlink:href="sprite.svg#cancel"></use></svg>Редактировать
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
